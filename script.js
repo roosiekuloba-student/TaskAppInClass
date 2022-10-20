@@ -7,6 +7,10 @@ window.addEventListener('load', () => {
         e.preventDefault();
 
         const task = input.value;
+        if (task == ""){
+            alert("Please, fill in the task field");
+            return 0;
+        }
         const task_el = document.createElement('div');
         task_el.classList.add('task');
 
@@ -40,7 +44,7 @@ window.addEventListener('load', () => {
         task_el.appendChild(task_action_el);
 
         input.value = '';
-
+        
         list_el.appendChild(task_el);
 
         task_edit_el.addEventListener('click', (e) => {

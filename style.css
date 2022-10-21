@@ -33,6 +33,10 @@ h1 {
 	display: flex;
 }
 
+ol, li {
+	color: black;
+}
+
 input, button {
 	appearance: none;
 	border: none;
